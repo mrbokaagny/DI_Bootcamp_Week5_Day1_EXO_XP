@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+  <ion-title>To-do List</ion-title>
+  </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding">
+    <form (ngSubmit)="addTodo()">
+      <ion-item>
+        <ion-label position="floating">Add a to-do</ion-label>
+        <ion-input type="text" [(ngModel)]="newTodo" name="newTodo" placeholder="enter your todo"></ion-input>
+      </ion-item>
+      <ion-button type="submit" expand="full">Add</ion-button>
+    </form>
+  </ion-content>
